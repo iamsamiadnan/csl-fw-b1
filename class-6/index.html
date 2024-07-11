@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                max-width: 1440px;
+  
+                margin: 0 auto;
+            }
+            header {
+                border: 2px solid black;
+                padding: 4px;
+                border-radius: 4px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: black;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            main {
+                padding: 16px;
+            }
+
+            p {
+                margin: 16px 0;
+            }
+
+            .form {
+                border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 450px;
+                overflow: hidden;
+            }
+
+            input[type="email"], input[type="password"], input[type="submit"] {
+                height: 32px;
+                
+            }
+
+            .form-container {
+                border: 2px solid green;
+                display: flex;
+                justify-content: center;
+            }
+
+            .parent {
+                border: 2px solid green;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .child {
+                outline: 2px dashed red;
+                /* width: 50%; */
+                flex: 1;
+                /* min-width: 175px; */
+                flex-basis: 175px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#">Profile</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About</a>
+                    </div>
+                    <a href="#">Login</a>
+                </nav>
+            </header>
+
+            <main>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Debitis nobis molestiae sit eos beatae quisquam similique,
+                        mollitia tenetur soluta adipisci dignissimos in voluptates,
+                        hic tempora quo earum ipsa sequi totam!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Debitis nobis molestiae sit eos beatae quisquam similique,
+                        mollitia tenetur soluta adipisci dignissimos in voluptates,
+                        hic tempora quo earum ipsa sequi totam!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Debitis nobis molestiae sit eos beatae quisquam similique,
+                        mollitia tenetur soluta adipisci dignissimos in voluptates,
+                        hic tempora quo earum ipsa sequi totam!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Debitis nobis molestiae sit eos beatae quisquam similique,
+                        mollitia tenetur soluta adipisci dignissimos in voluptates,
+                        hic tempora quo earum ipsa sequi totam!
+                    </p>
+                </div>
+
+                <div class="form-container">
+                    <form class="form">
+                        <input type="email" required>
+                        <input type="password" required>
+                        <input type="submit" value="Sign In">
+                    </form>
+                </div>
+
+                <br>
+                <section class="parent">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
